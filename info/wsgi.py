@@ -11,7 +11,7 @@ import os
 import sys
 
 path = '/home/Triest/info'
-if path ot in sys.path:
+if path not in sys.path:
     sys.path.insert(0, path)
 
 from django.core.wsgi import get_wsgi_application
