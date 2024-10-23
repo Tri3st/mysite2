@@ -1,6 +1,9 @@
 #!/bin/sh
 # entry point for api
 
+set -a 
+source /home/Triest/.env
+set +a
 
 set -e
 
