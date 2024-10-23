@@ -17,7 +17,6 @@ import environ
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False),
-    ALLOWED_HOSTS=(list, [])
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,7 +36,7 @@ SECRET_KEY = env('SECRET_KEY', "CHECK THIS !!")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = env('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['vandiest.it', 'www.vandiest.it', 'info.vandiest.it']
 
 DB_NAME = env('DB_DATABASE')
 DB_USER = env('DB_USER')
