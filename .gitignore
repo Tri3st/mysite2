@@ -4,6 +4,7 @@ __pycache__
 .env
 .venv
 .idea/
+.venv/
 env/
 venv/
 ENV/
