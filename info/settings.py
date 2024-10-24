@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'blog.apps.BlogConfig',
-    'graphene_django',
     'corsheaders',
 ]
 
@@ -155,7 +154,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/Triest/info/static'
 STATIC_URL = '/static/'
 
-CORS_ALLOWED_ORIGINS = ("http://localhost:5173")
+CORS_ALLOWED_ORIGINS = ("http://localhost:5173",)
 
 
 GRAPHENE = {
