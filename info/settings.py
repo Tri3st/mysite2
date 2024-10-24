@@ -44,6 +44,8 @@ DB_PASSWORD = env('DB_PASSWORD')
 DB_HOST = env('DB_HOST')
 DB_PORT = env('DB_PORT')
 
+print("Database name : ", DB_NAME)
+
 
 # Application definition
 
