@@ -155,3 +155,7 @@ STATIC_URL = '/static/'
 
 CORS_ALLOWED_ORIGINS = ("http://localhost:5173")
 
+
+GRAPHENE = {
+    "SCHEMA": "blog.schema.schema"
+}
