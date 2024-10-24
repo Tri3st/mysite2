@@ -48,12 +48,14 @@ DB_PORT = env('DB_PORT')
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
     'blog',
 ]
 
@@ -150,3 +152,6 @@ MEDIA_ROOT = '/home/Triest/info/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/Triest/info/static'
 STATIC_URL = '/static/'
+
+CORS_ALLOWED_ORIGINS = ("http://localhost:5173")
+
